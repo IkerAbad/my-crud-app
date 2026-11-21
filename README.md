@@ -1,27 +1,49 @@
-# MyCrudApp
+# my-crud-app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+Aplicación Angular 15 (abril de 2023) con un CRUD de publicaciones (`posts`) que se conecta a la API de pruebas pública [JSONPlaceholder](https://jsonplaceholder.typicode.com). Es un ejercicio del ciclo de DAM para practicar servicios con `HttpClient`, módulos y rutas.
 
-## Development server
+## Qué hay
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Un módulo `post` con cuatro pantallas: listado (`index`), crear, editar y ver una publicación.
+- `post.service.ts`: llamadas GET, POST, PUT y DELETE a `https://jsonplaceholder.typicode.com/posts` con manejo de errores.
+- JSONPlaceholder simula las escrituras pero no guarda nada, así que crear, editar o borrar no persiste de verdad.
+- `ng build` compila sin errores. No he abierto la aplicación en un navegador desde aquí ni he pasado los tests.
 
-## Code scaffolding
+## Cómo probarlo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+npm ci
+npx ng serve
+```
 
-## Build
+y abre `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Licencia
 
-## Running unit tests
+MIT, ver [LICENSE](LICENSE).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+# my-crud-app (English)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+An Angular 15 app (April 2023) with a CRUD for posts that talks to the public test API [JSONPlaceholder](https://jsonplaceholder.typicode.com). It is an exercise from my DAM vocational course to practice services with `HttpClient`, modules and routing.
 
-## Further help
+## What's inside
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- A `post` module with four screens: list (`index`), create, edit and view a post.
+- `post.service.ts`: GET, POST, PUT and DELETE calls to `https://jsonplaceholder.typicode.com/posts` with error handling.
+- JSONPlaceholder fakes writes but does not store anything, so creating, editing or deleting does not really persist.
+- `ng build` compiles without errors. I have not opened the app in a browser from here nor run the tests.
+
+## Trying it
+
+```
+npm ci
+npx ng serve
+```
+
+then open `http://localhost:4200/`.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
